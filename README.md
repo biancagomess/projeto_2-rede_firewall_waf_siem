@@ -9,7 +9,7 @@ Este projeto propõe a concepção e execução de segurança de rede, incorpora
 ---
 <span>Etapas do projeto de acordo com o proposto no desafio pelo programa Desenvolve Boticário em parceria com a Alura:</span>
 <ul>
-  <li> <a href="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/tree/39e32ccf2b1dd9d090804d6b529d6cc427440bd5/Planejamento%20de%20Seguran%C3%A7a">Planejamento de Segurança: Defina requisitos de segurança, objetivos e políticas.</a></li>
+  <li> <a href="Planejamento de Segurança/Planejamento de Segurança.md">Planejamento de Segurança: Defina requisitos de segurança, objetivos e políticas.</a></li>
   <li>  Implementação de Firewall: Configure um firewall para proteger a rede.</li>
   <li> Configuração de WAF: Configure um WAF para proteger aplicativos web.</li>
   <li> Implementação de SIEM: Implemente um SIEM para monitorar eventos de segurança.</li>
