@@ -1,16 +1,16 @@
-- Implementando um SIEM para monitoramento de eventos:
+<h2>Implementando um SIEM para monitoramento de eventos:</h2>
     
-    Este projeto usa Graylog como ferramenta de SIEM para centralização dos logs. 
+   Este projeto usa Graylog como ferramenta de SIEM para centralização dos logs. 
     
-    Para configurar o Graylog, crie uma máquina virtual no VirtualBox usando a .iso do Debian ou outra distro que você preferir utilizar e siga as instruções no próprio site do [Graylog](https://go2docs.graylog.org/5-0/downloading_and_installing_graylog/debian_installation.htm).  
+   Para configurar o Graylog, crie uma máquina virtual no VirtualBox usando a .iso do Debian ou outra distro que você preferir utilizar e siga as instruções no próprio site do [Graylog](https://go2docs.graylog.org/5-0/downloading_and_installing_graylog/debian_installation.htm).  
     
-    Após a máquina virtual do Graylog criada, inicie e entre com as credenciais informadas no momento da instalação. 
+   Após a máquina virtual do Graylog criada, inicie e entre com as credenciais informadas no momento da instalação. 
     
-    **Configure a rede da máquina da seguinte forma:** 
+   **Configure a rede da máquina da seguinte forma:** 
     
-    ![rede_graylog01](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/imagens/configurando_siem/rede_graylog01.png)
+   ![rede_graylog01](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/imagens/configurando_siem/rede_graylog01.png)
     
-    Ligue a máquina e atribua um IP com essas instruções:
+   Ligue a máquina e atribua um IP com essas instruções:
 ---
    [Configurando IP na máquina ](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/configs_iniciais_Virtualbox/configurando_IP_na_ma%CC%81quina.md)
     
