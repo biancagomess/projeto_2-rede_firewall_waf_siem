@@ -8,77 +8,80 @@
     
     **Configure a rede da máquina da seguinte forma:** 
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2034.png)
+    ![rede_graylog01](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/imagens/configurando_siem/rede_graylog01.png)
     
     Ligue a máquina e atribua um IP com essas instruções:
+---
+   [Configurando IP na máquina ](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/configs_iniciais_Virtualbox/configurando_IP_na_ma%CC%81quina.md)
     
-    [Configurando IP na máquina ](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Configurando%20IP%20na%20ma%CC%81quina%20f412c174356d485f949a499b7ee60466.md)
+   Irá abrir um arquivo de configuração, informe o endereço de IP da máquina, nesse projeto é o: 
     
-    Irá abrir um arquivo de configuração, informe o endereço de IP da máquina, nesse projeto é o: 
+   **172.16.10.12 (mesma rede que a DMZ).**
+---
+
+O Graylog está configurado, porém não é possível ter acesso a ele, pois a intranet não está mesma rede, assim a intranet não reconhece o IP do Graylog, nesse caso é necessário realizar uma tradução de IP usando o NAT e essa configuração é feita no pfSense. 
+
+---
+   [Criando IP virtual e realizando NAT - Graylog](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/implementa%C3%A7%C3%A3o_Firewall_pfSense/Criando%20IP%20virtual%20e%20realizando%20NAT%20-%20Graylog.md)
+
+---
+
+  O Graylog por padrão usa a port 9000, dessa forma é preciso verificar quais são as portas ativas no Graylog, indo no terminal do Graylog, digite o comando: 
     
-    **172.16.10.12 (mesma rede que a DMZ).** 
+```bash
+ ss -nlt
+```
     
-    O Graylog está configurado, porém não é possível ter acesso a ele, pois a intranet não está mesma rede, assim a intranet não reconhece o IP do Graylog, nesse caso é necessário realizar uma tradução de IP usando o NAT e essa configuração é feita no pfSense. 
+![ip_porta_graylog02](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/imagens/configurando_siem/porta_udp_graylog06.png)
     
-    [Criando IP virtual e realizando NAT - Graylog](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Criando%20IP%20virtual%20e%20realizando%20NAT%20-%20Graylog%208fa28b93d7f6405cb702880ce6804f07.md)
+Confirme o IP do Graylog com a porta padrão. 
     
-    O Graylog por padrão usa a port 9000, dessa forma é preciso verificar quais são as portas ativas no Graylog, indo no terminal do Graylog, digite o comando: 
+   Para que haja comunicação entre Intranet e Graylog, será necessário ainda configurar o pfSense para permitir o tráfego  que chega no IP do Graylog e porta 9000. 
     
-    ```bash
-    ss -nlt
-    ```
+   Vá ao **firewall**, na interface **Intranet** e aplique as seguintes configurações conforme a imagem: 
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2035.png)
+   ![regra_graylog_pfsense03](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/imagens/configurando_siem/regra_graylog_pfsense03.png)
+   
+   ![regra_graylog_pfsense04](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/imagens/configurando_siem/regra_graylog_pfsense04.png)
     
-    Confirme o IP do Graylog com a porta padrão. 
+   Após tudo configurado, clique em **Save** e depois em **Apply Changes.** 
     
-    Para que haja comunicação entre Intranet e Graylog, será necessário ainda configurar o pfSense para permitir o tráfego  que chega no IP do Graylog e porta 9000. 
+   **Verifique como fica as regras na interface Intranet:**
     
-    Vá ao **firewall**, na interface **Intranet** e aplique as seguintes configurações conforme a imagem: 
+   ![conferindo_regras_graylog05](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/imagens/configurando_siem/conferindo_regras_graylog05.png)
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2036.png)
+   Graylog já está autorizado para ser acessado. 
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2037.png)
+   No navegador, digite o IP traduzido via NAT para acessar o Graylog: **192.168.56.12:9000**
     
-    Após tudo configurado, clique em **Save** e depois em **Apply Changes.** 
+   Insira as credenciais de acesso criadas. 
     
-    **Verifique como fica as regras na interface Intranet:**
+   Para o envio de logs do firewall ao Graylog configuramos nesse projeto a opção de Logs remotos, no seguinte caminho: 
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2038.png)
+   Status ➡️ System Logs ➡️ Settings ➡️ Remote Logging Options
     
-    Graylog já está autorizado para ser acessado. 
-    
-    No navegador, digite o IP traduzido via NAT para acessar o Graylog: **192.168.56.12:9000**
-    
-    Insira as credenciais de acesso criadas. 
-    
-    Para o envio de logs do firewall ao Graylog configuramos nesse projeto a opção de Logs remotos, no seguinte caminho: 
-    
-    Status ➡️ System Logs ➡️ Settings ➡️ Remote Logging Options
-    
-    <aside>
+   <aside>
     💡 Obs. O envio dos logs para o Graylog é através do protocolo UDP, nesse caso ao informar o IP do Graylog será necessário inserir a porta UDP padrão que é 1514, conforme imagem abaixo:
-    
     </aside>
     
-    Para verificar a porta, insira esse comando no terminal da máquina Graylog: 
+   Para verificar a porta, insira esse comando no terminal da máquina Graylog: 
     
-    ```jsx
-    ss -nlu //mostra as portas UDP
-    ```
+   ```jsx
+   ss -nlu //mostra as portas UDP
+   ```
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2039.png)
+   ![porta_udp_graylog06](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/imagens/configurando_siem/porta_udp_graylog06.png)
     
      
     
-    Em seguida prossiga com a configuração dos logs remotos no firewall: 
+   Em seguida prossiga com a configuração dos logs remotos no firewall: 
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2040.png)
+   ![log_remotos_graylog07](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/imagens/configurando_siem/log_remotos_graylog07.png)
     
-    Selecione quais tipos de log deseja enviar para ser gerenciado, nesse projeto somente os logs do firewall. 
+   Selecione quais tipos de log deseja enviar para ser gerenciado, nesse projeto somente os logs do firewall. 
     
-    Após tudo configurado, clique em **Save** e depois em **Apply Changes.** 
+   Após tudo configurado, clique em **Save** e depois em **Apply Changes.** 
     
-    No página do Graylog já é possível verificar os logs, quando selecionado uma opção de updating em tempo escolhido. 
+   No página do Graylog já é possível verificar os logs, quando selecionado uma opção de updating em tempo escolhido. 
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2041.png)
+   ![verificando_logs_graylog08](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/imagens/configurando_siem/verificando_logs_graylog08.png)
