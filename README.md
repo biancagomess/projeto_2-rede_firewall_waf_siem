@@ -10,7 +10,7 @@ Este projeto propõe a concepção e execução de segurança de rede, incorpora
 <span>Etapas do projeto de acordo com o proposto no desafio pelo programa Desenvolve Boticário em parceria com a Alura:</span>
 <ul>
   <li> <a href="Planejamento de Segurança/Planejamento de Segurança.md">Planejamento de Segurança: Defina requisitos de segurança, objetivos e políticas.</a></li>
-  <li>  Configurando o ambiente.</li>
+  <li> <a href="configs_iniciais_Virtualbox/configurando_ambiente_virtualbox.md"></a> Configurando o ambiente.</li>
   <li>  Implementação de Firewall: Configure um firewall para proteger a rede.</li>
   <li> Configuração de WAF: Configure um WAF para proteger aplicativos web.</li>
   <li> Implementação de SIEM: Implemente um SIEM para monitorar eventos de segurança.</li>
