@@ -2,7 +2,7 @@
     
     Na interface **DMZ**, **adicione** mais uma **regra para consulta DNS**: 
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2053.png)
+    ![configure_regra_dns](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7705a063117b6af8bb3d4eb1106ab815174abbe2/imagens/configurando_dns/configure_regra_dns.png)
     
     **Salve e aplique as alterações.**
     
