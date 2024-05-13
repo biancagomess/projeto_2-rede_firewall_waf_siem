@@ -32,6 +32,6 @@ Este projeto propõe a concepção e execução de segurança de rede, incorpora
   
 ---
 
-<h4>Passo a passo para configuração: </h4>
+
 
 
