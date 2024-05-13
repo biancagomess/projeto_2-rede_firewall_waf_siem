@@ -7,12 +7,14 @@ Este projeto propõe a concepção e execução de segurança de rede, incorpora
 </div>
 
 ---
-<span>O processo de criação da rede se deu seguindo as seguintes etapas: </span>
+<span>Etapas do projeto de acordo com o proposto no desafio pelo programa Desenvolve Boticário em parceria com a Alura:</span>
 <ul>
-  <li> <a href="#">Planejamento da Rede</a></li>
-  <li> Implementação de Firewall da Rede</li>
-  <li> Implamentação de SIEM</li>
-  <li> Configuração de Políticas</li>
+  <li> <a href="#">Planejamento de Segurança: Defina requisitos de segurança, objetivos e políticas.</a></li>
+  <li>  Implementação de Firewall: Configure um firewall para proteger a rede.</li>
+  <li> Configuração de WAF: Configure um WAF para proteger aplicativos web.</li>
+  <li> Implementação de SIEM: Implemente um SIEM para monitorar eventos de segurança.</li>
+  <li> Configuração de Políticas: Defina políticas de segurança e monitoramento.</li>
+  
 </ul>
 
 ---
