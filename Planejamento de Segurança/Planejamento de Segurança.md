@@ -1,21 +1,21 @@
-**Planejamento**
+<h2>Planejamento</h2>
 
 **Objetivo**: 
 Manter a rede da empresa SecurityPro, segura contra ataques externos, monitorar e filtrar o tráfego de rede e atividades suspeitas, monitorar o acesso á aplicação, controlar o acesso, estar de acordo com as leis e padrões adequados de segurança, protegendo assim toda a rede e em especial a aplicação Web. 
 
-**Requisitos de segurança**
+<h2>Requisitos de segurança</h2>
 
-[RS1] - Todas as máquinas devem ter senha forte com mais de 14 caracteres; 
+**[RS1]** - Todas as máquinas devem ter senha forte com mais de 14 caracteres; 
 
-[RS2] - A rede deve ser segmentada por DMZ; 
+**[RS2]** - A rede deve ser segmentada por DMZ; 
 
-[RS3] - O firewall deverá ser configurado corretamente; 
+**[RS3]** - O firewall deverá ser configurado corretamente; 
 
-[RS4] - O WAF deverá ser configurado corretamente para evitar ataque de SQL Injection e XSS(Cross-Site Scripting); 
+**[RS4]** - O WAF deverá ser configurado corretamente para evitar ataque de SQL Injection e XSS(Cross-Site Scripting); 
 
-[RS5] - Deverá coletar e analisar os log de todos os dispositivos da rede; 
+**[RS5]** - Deverá coletar e analisar os log de todos os dispositivos da rede; 
 
-**Políticas de segurança**
+<h2>Políticas de segurança</h2>
 
 O uso de dispositivos pessoais para acessar a rede corporativa não é permitido. 
 
