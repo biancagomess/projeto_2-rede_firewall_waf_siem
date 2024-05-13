@@ -6,11 +6,11 @@ No terminal digite o seguinte comando:
 nano /etc/network/interfaces
 ```
 
-![Untitled](Configurando%20IP%20na%20ma%CC%81quina%20a892d5177ab9472f9af47f64832234bd/Untitled.png)
+![comando_interfaces](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/e17218670af34fbb036d063da8b9e695454c8974/imagens/configurando_ip_na_m%C3%A1quina/comando_interfaces.png)
 
 **Irá abrir um arquivo de configuração como esse:**
 
-![Untitled](Configurando%20IP%20na%20ma%CC%81quina%20a892d5177ab9472f9af47f64832234bd/Untitled%201.png)
+![network_interfaces](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/e17218670af34fbb036d063da8b9e695454c8974/imagens/configurando_ip_na_m%C3%A1quina/network_interfaces.png)
 
 **Informe o IP da interface que você está configurando, salve o arquivo:** 
 
@@ -26,9 +26,8 @@ systemctl restart networking.service
 
 Verifique a atribuição do IP: 
 
-![Untitled](Configurando%20IP%20na%20ma%CC%81quina%20a892d5177ab9472f9af47f64832234bd/Untitled%202.png)
+![verificando_ip](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/e17218670af34fbb036d063da8b9e695454c8974/imagens/configurando_ip_na_m%C3%A1quina/verificando_ip.png)
 
 <aside>
-💡 Obs. Os IPs nas imagens, são para exemplo, é preciso atribuir a cada máquina um IP conforme a sua estrutura de rede.
-
+💡 Obs. Os IPs nas imagens, são para exemplo. É necessário atribuir a cada máquina um IP conforme a sua estrutura de rede.
 </aside>
