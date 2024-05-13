@@ -1,93 +1,101 @@
-
+<h2>Implementando o Firewall pfSense</h2>
 1. Na máquina virtual do pfSense (Firewall), configure o IP das interfaces, por padrão o pfSense vem com um IP  (você pode alterar), conforme a sua rede na opção 2 do terminal do pfSense. 
  
 
-![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%205.png)
+![interfaces_máquina_pfSense](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/interfaces_pfSense_config.png)
 
-1. Verifique as interfaces configuradas no pfSense:
+2. Verifique as interfaces configuradas no pfSense:
 
-![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%206.png)
+![exemplo_config_interface_terminal_pfSense](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/interfaces_exemplo_config_pfSense.png)
 
-1. Após as configurações, abra o browser, e digite o ip do pfSense: 
+3. Após as configurações, abra o browser, e digite o ip do pfSense: 
     
     **http://192.168.56.2**
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%207.png)
+    ![login_pfSense](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/login_pfSense.png)
     
     Informe o usuário e a senha, que vem por padrão “**admin**” como usuário e “**pfsense**” como senha.
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%208.png)
+    ![termos_pfSense](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/termos_pfSense.png)
     
-
 Aceite os termos. 
 
-1. Altere a senha padrão: 
+ ---
+4. Altere a senha padrão: 
     
     System ➡️ [User Manager](http://192.168.56.10/system_usermanager.php) ➡️  [Users](http://192.168.56.10/system_usermanager.php) ➡️ [Edit](http://192.168.56.10/system_usermanager.php?act=edit&userid=0) (ícone de lápis ✏️ para editar)
-    
+   
+---    
 
-Acesso seguinte caminho no menu para configurar acesso via ssh ao firewall: 
+5. Habilite ssh
+   Acesso seguinte caminho no menu para configurar acesso via ssh ao firewall: 
 
-System ➡️ [Advanced](http://192.168.56.2/system_advanced_admin.php) ➡️ [Admin Access](http://192.168.56.2/system_advanced_admin.php)
+   System ➡️ [Advanced](http://192.168.56.2/system_advanced_admin.php) ➡️ [Admin Access](http://192.168.56.2/system_advanced_admin.php)
 
-![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%209.png)
+![enable_ssh](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/enable_ssh_pfSense.png)
 
 Clique em **Save**
 
-**Verificando as interfaces na página inicial**
+---
+
+
+<h2>Verificando as interfaces na página inicial</h2>
 
 Na página inicial verifique as informações do sistema e as interfaces ativas no firewall e o tráfego de rede: 
 
-![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2010.png)
+![verificando_interfaces](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/visualizar_interfaces_pfSense.png)
 
 1. Configure a DMZEXT onde o WAF será configurado: 
-    1. Acesse o menu **Interfaces ➡️ [Interface Assignments](http://192.168.56.10/interfaces_assign.php)**
+    a. Acesse o menu **Interfaces ➡️ [Interface Assignments](http://192.168.56.10/interfaces_assign.php)**
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2011.png)
+    ![adicionando_dmzext](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/add_interface_dmzext.png)
     
     **b. Selecione o botão +Add, para adicionar a DMZEXT.** 
     
     c. Adicione as configurações: 
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2012.png)
+    ![configure_dmzext](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/configure_dmext_pfSense.png)
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2013.png)
+    ![configure_dmzext1](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/configure_dmext_pfSense%202.png)
     
     Depois clique em **SALVAR e Apply Changes, para aplicar as configurações:**
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2014.png)
+    ![apply_changes_dmzext](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/configure_dmext_pfSense%20apply_changes.png)
     
+--- 
 
 **Todas as interfaces já estão configuradas, e o próximo passo é configurar a regras no firewall pfSense.**
 
-![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2015.png)
+![interfaces_configuradas](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/todas_interfaces_pfSense.png)
 
 No menu **System ➡️ [General Setup](http://192.168.56.10/system.php)** é possível criar um domínio, configurar o servidor DNS, hostname, e até escolher um tema, mas no projeto vamos manter o padrão.
 
-![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2016.png)
+![demais_configurações](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/demais_configura%C3%A7%C3%B5es_pfSense.png)
 
-![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2017.png)
+![demais_configurações](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/demais_configura%C3%A7%C3%B5es_pfSense%202.png)
 
-- Implementando regras no Firewall pfSense para permitir e negar tráfego:
-    
+<h2>Implementando regras no Firewall pfSense para permitir e negar tráfego:</h2>    
+<div>
     <aside>
-    💡 **Obs. Vale lembrar que o firewall ler as regras de cima para baixo!**
-    
+    💡 Vale lembrar que o firewall ler as regras de cima para baixo!
     </aside>
+ </div> 
+ -
+ 
+**Para criar uma regra acesse no menu:**
+ - **Firewall ➡️ Rules ➡️ selecione a interface onde irá implementar a regra.** 
     
-    Para criar uma regra acesse no menu: **Firewall ➡️ Rules ➡️ selecione a interface onde irá implementar a regra.** 
+   Neste projeto foi iniciado as **configurações usando a estratégia “deny by default”** (negar por padrão). Essa estratégia envolve configurar um firewall de segurança para bloquear todo o tráfego de entrada e saída por padrão e, em seguida, criar regras específicas para permitir apenas o tráfego necessário para as operações legítimas da aplicação.
     
-    Neste projeto foi iniciado as **configurações usando a estratégia “deny by default”** (negar por padrão). Essa estratégia envolve configurar um firewall de segurança para bloquear todo o tráfego de entrada e saída por padrão e, em seguida, criar regras específicas para permitir apenas o tráfego necessário para as operações legítimas da aplicação.
+   Para configurar uma regra, é preciso clicar no botão ⤴️**Add**, e informar as especificações da regra de acordo com a sua rede, como:
+   
+   - Action  (ação que será realizada);
+   - Interface;
+   - Tipo de endereço IP (IPv4 / IPv6);
+   - Protocolo;
+   - Source (origem);
+   - Destination (destino);
+   - Registro de Logs;
+   - Descrição da regra;
     
-    Para configurar uma regra, é preciso clicar no botão ⤴️**Add**, e informar as especificações da regra de acordo com a sua rede, como:
-    
-    - Action  (ação que será realizada);
-    - Interface;
-    - Tipo de endereço IP (IPv4 / IPv6);
-    - Protocolo;
-    - Source (origem);
-    - Destination (destino);
-    - Registro de Logs;
-    - Descrição da regra;
-    
-    **Em todo esse projeto e por boa prática está ativo todos os registros de Log para que seja possível fazer uma melhor análise de tráfego na rede.** 
+   **Em todo esse projeto e por boa prática está ativo todos os registros de Log para que seja possível fazer uma melhor análise de tráfego na rede.** 
