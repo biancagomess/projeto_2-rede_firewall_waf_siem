@@ -1,12 +1,12 @@
 # Criando IP virtual e realizando NAT - WAF
 
-**IP virtual Graylog**
+**IP virtual WAF**
 
 No menu  **Firewall ➡️ [NAT](http://192.168.56.10/firewall_nat.php) ➡️ [1:1](http://192.168.56.10/firewall_nat_1to1.php)**
 
 Clique em **+Add ⤴️ para adicionar o IP que será traduzido.** 
 
-![Untitled](Criando%20IP%20virtual%20e%20realizando%20NAT%20-%20WAF%2093024a647e7e4c39b264b6f9e5afe2a6/Untitled.png)
+![ip_virtual_nat_waf01](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/8ceadf0a53055e218ac847840b160ae64ed1d75f/imagens/configurando_ip_virtual_nat/ip_virtual_nat_waf01.png)
 
 Na imagem acima foi configurado o IP do WAF **172.16.20.12** na mesma rede da internet **nesse caso o IP da sua rede local (do seu roteador),** através do **NAT (Network Address Translation).** 
 
@@ -26,10 +26,9 @@ Em seguida é necessário criar um IP virtual para o IP que foi traduzido pelo N
 
 **Firewall ➡️ Virtual IPs**
 
-![Untitled](Criando%20IP%20virtual%20e%20realizando%20NAT%20-%20WAF%2093024a647e7e4c39b264b6f9e5afe2a6/Untitled%201.png)
+![ip_virtual_nat_waf02](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/8ceadf0a53055e218ac847840b160ae64ed1d75f/imagens/configurando_ip_virtual_nat/ip_virtual_nat_waf02.png)
 
 Após tudo configurado, clique em **Save** e depois em **Apply Changes.** 
 
-Pronto! Retorne na sessão de configuração da DMZEXT: 
+Pronto! Retorne na sessão de configuração da DMZEXT.
 
-[Projeto_2 - Firewall, WAF, SIEM](../Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246.md)
