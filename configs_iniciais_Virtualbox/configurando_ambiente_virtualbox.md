@@ -37,7 +37,7 @@
     ![Untitled](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/a59d2277c905c7c49a4cd51b3a274a25ca9bfa82/imagens/configurando_ambiente_img/desable_dhcp.png)
     
 
-10. Ligue as máquinas virtuais;
+10. Inicie as máquinas virtuais;
     
 11. Configure o IP em cada máquina virtual (neste projeto está configurado da seguinte forma): 
 
@@ -45,7 +45,7 @@
     - Server_Web: IPv4 estático: 172.16.10.10/24;
     - Graylog: IPv4 estático: 172.16.10.12/24;
     - WAF: IPv4 estático: 172.16.20.12/24;
-
+---
 **Siga essas orientações para atribuir IP na máquina:**
 
 [Configurando IP na máquina](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7a0f91bfe5147646560eaf28be88f28e6f13ceca/configs_iniciais_Virtualbox/configurando_IP_na_ma%CC%81quina.md)
