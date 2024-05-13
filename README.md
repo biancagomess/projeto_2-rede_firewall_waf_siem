@@ -11,7 +11,7 @@ Este projeto propõe a concepção e execução de segurança de rede, incorpora
 <ul>
   <li> <a href="Planejamento de Segurança/Planejamento de Segurança.md">Planejamento de Segurança: Defina requisitos de segurança, objetivos e políticas.</a></li>
   <li> <a href="configs_iniciais_Virtualbox/configurando_ambiente_virtualbox.md">Configurando o ambiente.</a></li>
-  <li>  Implementação de Firewall: Configure um firewall para proteger a rede.</li>
+  <li> <a href="implementação_Firewall_pfSense/implementando-firewall-pfSense.md">Implementação de Firewall: Configure um firewall para proteger a rede.</a></li>
   <li> Configuração de WAF: Configure um WAF para proteger aplicativos web.</li>
   <li> Implementação de SIEM: Implemente um SIEM para monitorar eventos de segurança.</li>
   <li> Configuração de Políticas: Defina políticas de segurança e monitoramento.</li>
