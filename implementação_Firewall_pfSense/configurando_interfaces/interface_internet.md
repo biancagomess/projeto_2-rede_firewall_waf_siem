@@ -3,9 +3,9 @@
     
     Com base nas informações anteriores, a primeira configuração de bloqueio geral na interface Internet fica assim:
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2018.png)
+    ![iface_internet01](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/8cdfe0e21cde2da65d2373f00513ae012aa7c758/imagens/configurando_interfaces/iface_internet01.png)
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2019.png)
+    ![iface_internet02](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/8cdfe0e21cde2da65d2373f00513ae012aa7c758/imagens/configurando_interfaces/iface_internet02.png)
     
     Após tudo configurado, clique em **Save** e depois em **Apply Changes.** 
     
@@ -13,8 +13,8 @@
     
     Para agilizar o processo, selecione a regra, clique em  **Copy, selecione a interface que deseja e clique em Paste.** 
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2020.png)
+    ![iface_internet03](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/8cdfe0e21cde2da65d2373f00513ae012aa7c758/imagens/configurando_interfaces/iface_internet03.png)
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2021.png)
+    ![iface_internet04](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/8cdfe0e21cde2da65d2373f00513ae012aa7c758/imagens/configurando_interfaces/iface_internet04.png)
     
     Aplique as alterações. 
