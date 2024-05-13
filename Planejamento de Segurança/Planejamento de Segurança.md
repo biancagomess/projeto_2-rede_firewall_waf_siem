@@ -1,7 +1,7 @@
 <h2>Planejamento</h2>
 
 **Objetivo**: 
-Manter a rede da empresa SecurityPro, segura contra ataques externos, monitorar e filtrar o tráfego de rede e atividades suspeitas, monitorar o acesso à aplicação, controlar o acesso, estar de acordo com as leis e padrões adequados de segurança, protegendo assim toda a rede e em especial a aplicação Web. 
+Manter a rede da empresa SecurityPro, segura contra ataques externos, monitorar e filtrar o tráfego de rede e atividades suspeitas, monitorar o acesso à aplicação, controlar o acesso, estar de acordo com as leis, frmeworks e padrões adequados de segurança, protegendo assim toda a rede e em especial a aplicação Web. 
 
 <h2>Requisitos de segurança</h2>
 
