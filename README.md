@@ -19,3 +19,18 @@ Este projeto propõe a concepção e execução de segurança de rede, incorpora
 
 ---
 
+<h4>Tecnologias/ferramentas utilizadas:</h4>
+
+- Virtualbox ou outro software de virtualização;
+- PfSense .iso versão 2.7.2-realease(amd64);
+- Debian .iso;
+- Graylog;
+- Nginx ModSecurity;
+- Snort;
+- Netfilter(iptables)
+  
+---
+
+<h4>Passo a passo para configuração: </h4>
+
+
