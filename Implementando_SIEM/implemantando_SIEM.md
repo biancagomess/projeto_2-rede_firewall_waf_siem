@@ -20,7 +20,7 @@
 
 ---
 
-O Graylog está configurado, porém não é possível ter acesso a ele, pois a intranet não está mesma rede, assim a intranet não reconhece o IP do Graylog, nesse caso é necessário realizar uma tradução de IP usando o NAT e essa configuração é feita no pfSense. 
+O Graylog está configurado, porém não é possível ter acesso a ele, pois a intranet não está na mesma rede, assim a intranet não reconhece o IP do Graylog, nesse caso é necessário realizar uma tradução de IP usando o NAT e essa configuração é feita no pfSense. 
 
 ---
    [Criando IP virtual e realizando NAT - Graylog](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/implementa%C3%A7%C3%A3o_Firewall_pfSense/Criando%20IP%20virtual%20e%20realizando%20NAT%20-%20Graylog.md)
