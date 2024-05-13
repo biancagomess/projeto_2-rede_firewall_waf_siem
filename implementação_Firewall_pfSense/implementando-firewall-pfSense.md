@@ -99,3 +99,17 @@ No menu **System ➡️ [General Setup](http://192.168.56.10/system.php)** é po
    - Descrição da regra;
     
    **Em todo esse projeto e por boa prática está ativo todos os registros de Log para que seja possível fazer uma melhor análise de tráfego na rede.** 
+
+
+ <h3>Verificando os logs no firewall</h3>
+    
+   No Firewall é possível verificar os logs do tráfego de rede e aplicar filtros para uma melhor análise, no seguinte caminho no menu:
+    
+   **Status ➡️ [System Logs](http://192.168.56.10/status_logs.php) ➡️ [Firewall](http://192.168.56.10/status_logs_filter.php) ➡️ [Dynamic View](http://192.168.56.10/status_logs_filter_dynamic.php?logfile=filter&view=dynamic)**
+    
+   Para mais detalhes do tráfego da rede, pode ser configurado a captura de pacotes através do acesso em: 
+   
+   **Diagnostics ➡️ [Packet Capture](http://192.168.56.10/diag_packet_capture.php)**
+   
+   Insira as configurações que deseja monitorar e clique em **Start,** logo a captura de pacotes será iniciada. Depois para encerrar clica em **Stop.** 
+    
