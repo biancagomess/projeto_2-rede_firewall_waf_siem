@@ -9,7 +9,7 @@
     
     Adicione uma regra de **Pass ping** acima da regra já existente “Deny By Default”, com as seguintes especificações:
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2025.png)
+    ![iface_dmz01](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/cf7d2f2de592fe6a7a64e39340326865bb8d0a20/imagens/configurando_interfaces/iface_dmz01.png)
     
     <aside>
     💡 Obs. O protocolo autorizado é o ICMP (usado aqui para teste de conexão - ping), foi liberado somente os types (ECHO request e o ECHO replay). Após essa configuração, caso queira testar se a regra está funcionando, acesse a máquina virtual do servidor **Server_Web**, faça o login com as credenciais que você criou e em seguida realize o seguinte comando no terminal:
@@ -22,5 +22,5 @@
     
     **Verifique o resultado do ping com sucesso:**
     
-    ![Untitled](Projeto_2%20-%20Firewall,%20WAF,%20SIEM%20b9678ece1dc849258656670c38ca7246/Untitled%2026.png)
+    ![iface_dmz02](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/cf7d2f2de592fe6a7a64e39340326865bb8d0a20/imagens/configurando_interfaces/iface_dmz02.png)
     
