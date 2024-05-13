@@ -10,13 +10,14 @@
     
    ![rede_graylog01](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/imagens/configurando_siem/rede_graylog01.png)
     
-   Ligue a máquina e atribua um IP com essas instruções:
+**Ligue a máquina e atribua um IP com essas instruções:**
+
 ---
    [Configurando IP na máquina ](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f71aaa1b33e78052115e7d43c6213d3944d47ac1/configs_iniciais_Virtualbox/configurando_IP_na_ma%CC%81quina.md)
     
    Irá abrir um arquivo de configuração, informe o endereço de IP da máquina, nesse projeto é o: 
-    
-   **172.16.10.12 (mesma rede que a DMZ).**
+    **172.16.10.12 (mesma rede que a interface DMZ).**
+
 ---
 
 O Graylog está configurado, porém não é possível ter acesso a ele, pois a intranet não está mesma rede, assim a intranet não reconhece o IP do Graylog, nesse caso é necessário realizar uma tradução de IP usando o NAT e essa configuração é feita no pfSense. 
