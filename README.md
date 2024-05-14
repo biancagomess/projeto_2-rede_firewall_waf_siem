@@ -27,7 +27,7 @@ Este projeto propõe a concepção e execução de segurança de rede, incorpora
    <br>
   <li><a href="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/94bec9e70d309f037b7ee0cf8b42951fefe9e859/Implementando_SIEM/implemantando_SIEM.md"> Implementação de SIEM: Implemente um SIEM para monitorar eventos de segurança.</a></li>
    <br>
-  <li> Testando a segurança da aplicação.</li>
+  <li><a href="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/75360aae7449fb087329c2d068dd1e79870e7e4d/testando_a_aplica%C3%A7%C3%A3o/testando_a_aplicacao.md"> Testando a segurança da aplicação.</a></li>
      <br>
   <li> Facilitando a leitura de logs e dashboard no Graylog - SIEM</li>
   
