@@ -1,4 +1,4 @@
-<h2>Implementando o Firewall pfSense</h2>
+<h1>Implementando o Firewall pfSense</h1>
 1. Na máquina virtual do pfSense (Firewall), configure o IP das interfaces, por padrão o pfSense vem com um IP  (você pode alterar), conforme a sua rede na opção 2 do terminal do pfSense. 
  
 
@@ -46,13 +46,13 @@ Na página inicial verifique as informações do sistema e as interfaces ativas 
 
 ![verificando_interfaces](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/visualizar_interfaces_pfSense.png)
 
-1. Configure a DMZEXT onde o WAF será configurado: 
+1. Adicione a interface DMZEXT onde o WAF será configurado: 
 
    a. Acesse o menu **Interfaces ➡️ [Interface Assignments](http://192.168.56.2/interfaces_assign.php)**
     
     ![adicionando_dmzext](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/add_interface_dmzext.png)
     
-    **b. Selecione o botão +Add, para adicionar a DMZEXT.** 
+    **b. Selecione o botão Add⤴️, para adicionar a DMZEXT.** 
     
     c. Adicione as configurações: 
     
@@ -70,24 +70,19 @@ Na página inicial verifique as informações do sistema e as interfaces ativas 
 
 ![interfaces_configuradas](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/todas_interfaces_pfSense.png)
 
-No menu **System ➡️ [General Setup](http://192.168.56.10/system.php)** é possível criar um domínio, configurar o servidor DNS, hostname, e até escolher um tema, mas no projeto vamos manter o padrão.
-
-![demais_configurações](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/demais_configura%C3%A7%C3%B5es_pfSense.png)
-
-![demais_configurações](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/demais_configura%C3%A7%C3%B5es_pfSense%202.png)
-
+**Para criar uma regra acesse no menu:**
 <h2>Implementando regras no Firewall pfSense para permitir e negar tráfego:</h2>    
 <div>
     <aside>
-    💡 Vale lembrar que o firewall ler as regras de cima para baixo!
+    💡 <b>Vale lembrar que o firewall ler as regras de cima para baixo!</b>
     </aside>
  </div> 
- -
- 
-**Para criar uma regra acesse no menu:**
+
  - **Firewall ➡️ Rules ➡️ selecione a interface onde irá implementar a regra.** 
     
-   Neste projeto foi iniciado as **configurações usando a estratégia “deny by default”** (negar por padrão). Essa estratégia envolve configurar um firewall de segurança para bloquear todo o tráfego de entrada e saída por padrão e, em seguida, criar regras específicas para permitir apenas o tráfego necessário para as operações legítimas da aplicação.
+   Neste projeto foi iniciado as **configurações usando a estratégia “deny by default”** (negar por padrão).
+
+   Essa estratégia envolve configurar um firewall de segurança para bloquear todo o tráfego de entrada e saída por padrão e, em seguida, criar regras específicas para permitir apenas o tráfego necessário para as operações legítimas da aplicação.
     
    Para configurar uma regra, é preciso clicar no botão ⤴️**Add**, e informar as especificações da regra de acordo com a sua rede, como:
    
@@ -102,8 +97,22 @@ No menu **System ➡️ [General Setup](http://192.168.56.10/system.php)** é po
     
    **Em todo esse projeto e por boa prática está ativo todos os registros de Log para que seja possível fazer uma melhor análise de tráfego na rede.** 
 
+----
+<h2>Configurando regras nas interfaces</h2>
 
- <h3>Verificando os logs no firewall</h3>
+Cada interface deverá ter suas regras, configure uma por uma: 
+  1. [Configure a interface Internet](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/800c1a16a2f64ad10fb5efa5aa40dbcacaa6ec94/implementa%C3%A7%C3%A3o_Firewall_pfSense/configurando_interfaces/interface_internet.md); 
+  2. Configure a interface Intranet; 
+  3. Configure a interface DMZ; 
+  4. Configure a interface DMZEXT;
+
+
+----
+
+
+
+----
+ <h2>Verificando os logs no firewall</h2>
     
    No Firewall é possível verificar os logs do tráfego de rede e aplicar filtros para uma melhor análise, no seguinte caminho no menu:
     
@@ -114,4 +123,13 @@ No menu **System ➡️ [General Setup](http://192.168.56.10/system.php)** é po
    **Diagnostics ➡️ [Packet Capture](http://192.168.56.10/diag_packet_capture.php)**
    
    Insira as configurações que deseja monitorar e clique em **Start,** logo a captura de pacotes será iniciada. Depois para encerrar clica em **Stop.** 
+
+----
+
+<h2>Outras configurações no pfSense:</h2>
+ No menu **System ➡️ [General Setup](http://192.168.56.10/system.php)** é possível criar um domínio, configurar o servidor DNS, hostname, e até escolher um  tema, mas no projeto vamos manter o padrão.
+
+  ![demais_configurações](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/demais_configura%C3%A7%C3%B5es_pfSense.png)
+
+  ![demais_configurações](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/demais_configura%C3%A7%C3%B5es_pfSense%202.png)
     
