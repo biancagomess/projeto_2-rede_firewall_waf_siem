@@ -66,7 +66,7 @@ Na página inicial verifique as informações do sistema e as interfaces ativas 
     
 --- 
 
-**Todas as interfaces já estão configuradas, e o próximo passo é configurar a regras no firewall pfSense.**
+**Todas as interfaces já estão ativas, e o próximo passo é configurar a regras em cada interface no firewall pfSense.**
 
 ![interfaces_configuradas](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/todas_interfaces_pfSense.png)
 
