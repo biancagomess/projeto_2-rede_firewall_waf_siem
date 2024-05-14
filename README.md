@@ -23,7 +23,7 @@ Este projeto propõe a concepção e execução de segurança de rede, incorpora
    <br>
   <li> <a href="implementação_Firewall_pfSense/implementando-firewall-pfSense.md">Implementação de Firewall: Configure um firewall para proteger a rede.</a></li>
    <br>
-  <li> <a href="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/ebf73e6f4ea3d7ebdf297e9e71a7aae234a9ca9c/implementa%C3%A7%C3%A3o_Firewall_pfSense/configurando_interfaces/interface_dmzext.md">Configuração de WAF: Configure um WAF para proteger aplicativos web.</a></li>
+  <li> <a href="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/0e72c4a82bbbf98ad34303ba1fba1a0ce6fa5dad/implementa%C3%A7%C3%A3o_Firewall_pfSense/configurando_interfaces/interface_dmzext.md">Configuração de WAF: Configure um WAF para proteger aplicativos web.</a></li>
    <br>
   <li><a href="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/e3c81c7737e46b11ea28c74eabff8beaf57993c3/Implementando_SIEM/implemantando_SIEM.md"> Implementação de SIEM: Implemente um SIEM para monitorar eventos de segurança.</a></li>
    <br>
