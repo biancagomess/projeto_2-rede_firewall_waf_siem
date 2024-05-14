@@ -9,5 +9,5 @@ Clique em **Add⤴️** e insira as configurações para customizar as portas a 
 
 Após tudo configurado, clique em **Save** e depois em **Apply Changes.** 
 
-<img src="" width="70%"/>
+<img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7863b756b8ab206b08df6a0ba90dc766648b1fc9/imagens/configurando_alias_ip/configurando_alias_ip01.png" width="70%"/>
 
