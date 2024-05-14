@@ -11,3 +11,9 @@ Recebemos um erro HTTP 403 - Forbiden:
 Demostrando que não pode ser acesso, pois está priobido. 
 
 **Sendo assim, a nossa aplicação encontra-se segura!**
+
+No Graylog é possível verificar esse bloqueio, fazendo a busca "ModSecurity": 
+
+![image](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/assets/81443381/dcd2226c-2e06-4af4-8bbc-8b2bbf05d560)
+
+Esse log, traz todas as informações do bloqueio, como o host, origem e destino, o erro, a severidade do ataque e diversas outras informações. 
