@@ -11,13 +11,14 @@
    <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/cf7d2f2de592fe6a7a64e39340326865bb8d0a20/imagens/configurando_interfaces/iface_dmz01.png" width="70%"/>
     
    <aside>
-    💡 Obs. O protocolo autorizado é o ICMP (usado aqui para teste de conexão - ping), foi liberado somente os types (ECHO request e o ECHO replay). Após essa configuração, caso queira testar se a regra está funcionando, acesse a máquina virtual do servidor **Server_Web**, faça o login com as credenciais que você criou e em seguida realize o seguinte comando no terminal:
+    💡 Obs. O protocolo autorizado é o ICMP (usado aqui para teste de conexão - ping), foi liberado somente os types (ECHO request e o ECHO replay). Após essa configuração, caso queira testar se a regra está funcionando, acesse a máquina virtual do servidor <b>Server_Web</b>, faça o login com as credenciais que você criou e em seguida realize o seguinte comando no terminal:
     
    </aside>
     
    ```bash
    ping 172.16.10.1 #ip da interface DMZ
    ```
+
     
    **Verifique o resultado do ping com sucesso:**
     
