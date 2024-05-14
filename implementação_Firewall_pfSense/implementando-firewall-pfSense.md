@@ -106,7 +106,7 @@ Na página inicial verifique as informações do sistema e as interfaces ativas 
 <h2>Configurando regras nas interfaces</h2>
 
 Cada interface deverá ter suas regras, configure uma por uma: 
-  1. [Configure a interface Internet](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/800c1a16a2f64ad10fb5efa5aa40dbcacaa6ec94/implementa%C3%A7%C3%A3o_Firewall_pfSense/configurando_interfaces/interface_internet.md); 
+  1. [Configure a interface Internet](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/1e59edbaefe90f7d84a2309f6145db2ab516bf76/implementa%C3%A7%C3%A3o_Firewall_pfSense/configurando_interfaces/interface_internet.md); 
   2. [Configure a interface Intranet](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/57f19c049846de71b168102c02c6e7ebb62c44f2/implementa%C3%A7%C3%A3o_Firewall_pfSense/configurando_interfaces/interface_intranet.md); 
   3. [Configure a interface DMZ](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/57f19c049846de71b168102c02c6e7ebb62c44f2/implementa%C3%A7%C3%A3o_Firewall_pfSense/configurando_interfaces/interface_dmz.md); 
   4. [Configure a interface DMZEXT](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/57f19c049846de71b168102c02c6e7ebb62c44f2/implementa%C3%A7%C3%A3o_Firewall_pfSense/configurando_interfaces/interface_dmzext.md);
