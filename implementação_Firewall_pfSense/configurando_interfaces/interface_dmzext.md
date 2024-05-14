@@ -8,11 +8,11 @@
     
    [How to Install ModSecurity for Nginx on Debian/Ubuntu](https://www.tecmint.com/install-modsecurity-nginx-debian-ubuntu/)
     
-   Configure a rede na DMZEXT:
+   **Configure a rede na DMZEXT:**
     
    ![interface_dmzext01](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/a622bf803f6908b4aac03f16e98901337a3ef49c/imagens/configurando_interfaces/iface_dmzext.png)
     
-   Ligue a máquina e atribua um IP com essas instruções:
+   **Ligue a máquina e atribua um IP com essas instruções:**
     
    No terminal, abre o arquivo de configuração do Nginx com o seguinte comando: 
     
@@ -22,7 +22,7 @@
     
    ![interface_dmzext01](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/9c8a2fce0ea0a40f756d457b62012df8f222ee12/imagens/configurando_interfaces/iface_dmzext01.png)
     
-   Para enviar os logs do WAF ao Graylog, configurar esse arquivo com os seguintes dados: 
+   **Para enviar os logs do WAF ao Graylog, configurar esse arquivo com os seguintes dados:** 
     
    ![interface_dmzex02](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/9c8a2fce0ea0a40f756d457b62012df8f222ee12/imagens/configurando_interfaces/iface_dmzext02.png)
     
@@ -48,7 +48,7 @@
     
    **Firewall ➡️ [Rules](http://192.168.56.2/firewall_rules.php) ➡️ [DMZEXT](http://192.168.56.2/firewall_rules.php?if=opt2)**
     
-   Configure a regras para liberar o acesso do WAF ao Graylog, para enviar os logs através do protocolo UDP: 
+   **Configure a regras para liberar o acesso do WAF ao Graylog, para enviar os logs através do protocolo UDP:** 
     
    ![iface_dmzext03](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/a622bf803f6908b4aac03f16e98901337a3ef49c/imagens/configurando_interfaces/iface_dmzext03.png)
     
@@ -66,8 +66,8 @@
     
    ![iface_dmext05](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/a622bf803f6908b4aac03f16e98901337a3ef49c/imagens/configurando_interfaces/iface_dmzext05.png)
     
-   No Graylog já é possível identificar os logs enviados pelo WAF:
+   **Verificando os logs no Graylog enviados pelo WAF:**
     
    ![iface_dmext06](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/a622bf803f6908b4aac03f16e98901337a3ef49c/imagens/configurando_interfaces/iface_dmzext06.png)
     
-   Para implementar mais segurança a rede, é necessário o uso de um IDS/IPS para detectar tráfego malicioso e realizar ações de bloqueio, pois somente o WAF não oferece uma proteção abrangente. 
+   **Para implementar mais segurança a rede, é necessário o uso de um IDS/IPS para detectar tráfego malicioso e realizar ações de bloqueio, pois somente o WAF não oferece uma proteção abrangente.**
