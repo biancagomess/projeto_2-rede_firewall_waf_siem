@@ -8,7 +8,7 @@ Para melhorar a segurança da rede, neste projeto foi implemento a segurnaça em
     
    **Na interface DMZ foi criado a regra de acesso para o IP do Graylog:**
     
-   ![iptables01](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/ec4deda75759f7a8578927ee99235baf4017add2/imagens/configurando_iptables/iptables01.png)
+   <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/ec4deda75759f7a8578927ee99235baf4017add2/imagens/configurando_iptables/iptables01.png" width="70%"/>
     
    Clique em **Save e aplique as alterações.** 
    
@@ -33,7 +33,7 @@ Para melhorar a segurança da rede, neste projeto foi implemento a segurnaça em
    **apt update**
    ```
     
-   ![iptables02](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/ec4deda75759f7a8578927ee99235baf4017add2/imagens/configurando_iptables/iptables02.png)
+   <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/ec4deda75759f7a8578927ee99235baf4017add2/imagens/configurando_iptables/iptables02.png" width="70%"/>
     
    ```bash
    **apt install iptables-persistent #digite YES para as opções;**
@@ -44,7 +44,7 @@ Para melhorar a segurança da rede, neste projeto foi implemento a segurnaça em
    iptables -nvL
    ```
     
-   ![iptables03](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/ec4deda75759f7a8578927ee99235baf4017add2/imagens/configurando_iptables/iptables03.png)
+   <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/ec4deda75759f7a8578927ee99235baf4017add2/imagens/configurando_iptables/iptables03.png" width="70%"/>
 
 ---
 
@@ -68,8 +68,8 @@ Para melhorar a segurança da rede, neste projeto foi implemento a segurnaça em
     
    Com essas configurações é garantido a comunicação com o firewall e a segurança em camadas, ficando as regras da seguinte forma:
     
-   ![iptables04](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/ec4deda75759f7a8578927ee99235baf4017add2/imagens/configurando_iptables/iptables04.png)
+  <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/ec4deda75759f7a8578927ee99235baf4017add2/imagens/configurando_iptables/iptables04.png" width="70%"/>
     
    Salve as regras no seguinte caminho de arquivo de configurações: 
     
-   ![iptables05](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/ec4deda75759f7a8578927ee99235baf4017add2/imagens/configurando_iptables/iptables05.png)
+ <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/ec4deda75759f7a8578927ee99235baf4017add2/imagens/configurando_iptables/iptables05.png" width="70%"/>
