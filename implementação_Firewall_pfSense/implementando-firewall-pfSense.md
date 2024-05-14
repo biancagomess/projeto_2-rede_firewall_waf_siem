@@ -14,7 +14,7 @@
     
     ![login_pfSense](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/login_pfSense.png)
     
-    Informe o usuário e a senha, que vem por padrão “**admin**” como usuário e “**pfsense**” como senha.
+    Informe o usuário e a senha, que vem por padrão usuário: “**admin**”, senha:“**pfsense**”.
     
     ![termos_pfSense](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/termos_pfSense.png)
     
