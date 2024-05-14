@@ -2,16 +2,17 @@
     
 **Neste projeto utiliza o DNS da cloudflare**
       
-   No terminal da máquina do servidor digite o seguinte comando: 
+No terminal da máquina do servidor digite o seguinte comando: 
     
    ```bash
    nano /etc/resolv.conf
    ```
     
-   No arquivo digite as seguintes configurações: 
+
+No arquivo digite as seguintes configurações: 
     
-   nameserver 1.1.1.1
-   
-   nameserver 1.0.0.1
+nameserver 1.1.1.1 
+
+nameserver 1.0.0.1
     
    Grave as alterações **Ctrl + o**
