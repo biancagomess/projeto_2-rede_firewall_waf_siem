@@ -48,4 +48,4 @@
 ---
 **Siga essas orientações para atribuir IP na máquina:**
 
-[Configurando IP na máquina](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7a0f91bfe5147646560eaf28be88f28e6f13ceca/configs_iniciais_Virtualbox/configurando_IP_na_ma%CC%81quina.md) 
+[Configurando IP na máquina](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/931ea57300d9dfa1b0a3cf5a42322f7c9e4465b6/configs_iniciais_Virtualbox/configurando_IP_na_ma%CC%81quina.md) 
