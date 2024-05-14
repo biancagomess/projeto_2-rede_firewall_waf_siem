@@ -1,39 +1,39 @@
-- Configurar IDS/IPS - Snort
+<h1>Configurar IDS/IPS - Snort</h1>
+   
+   No pfSense no menu: 
     
-    No pfSense no menu: 
+   <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/439a3b1bb6390363cd98a118d0d517994f7452ba/imagens/configurando_snort/snort01.png" width="70%"/>
     
-    ![snort01](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/439a3b1bb6390363cd98a118d0d517994f7452ba/imagens/configurando_snort/snort01.png)
+   Instale o pacote do Snort. 
     
-    Instale o pacote do Snort. 
+   <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/439a3b1bb6390363cd98a118d0d517994f7452ba/imagens/configurando_snort/snort02.png" width="70%" />
     
-    ![snort02](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/439a3b1bb6390363cd98a118d0d517994f7452ba/imagens/configurando_snort/snort02.png)
+   Obs. Caso encontre ero na instalação, atualize a versão do pfSense no menu: 
     
-    Obs. Caso encontre ero na instalação, atualize a versão do pfSense no menu: 
+   System ➡️ Update
     
-    System ➡️ Update
+   <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/439a3b1bb6390363cd98a118d0d517994f7452ba/imagens/configurando_snort/snort03.png" width="70%"/>
     
-    ![snort03](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/439a3b1bb6390363cd98a118d0d517994f7452ba/imagens/configurando_snort/snort03.png)
+   Após instalado, o Snort deve ser configurado para fazer a detecção de tráfego malicioso(possível ataque e ameaças). 
     
-    Após instalado, o Snort deve ser configurado para fazer a detecção de tráfego malicioso(possível ataque e ameaças). 
+   **Siga as instruções da documentação original para essa configuração de acordo com a sua estrutura de rede:** 
     
-    **Siga as instruções da documentação original para essa configuração de acordo com a sua estrutura de rede:** 
+   [Packages — IDS / IPS — Configuring the Snort Package | pfSense Documentation](https://docs.netgate.com/pfsense/en/latest/packages/snort/setup.html)
     
-    [Packages — IDS / IPS — Configuring the Snort Package | pfSense Documentation](https://docs.netgate.com/pfsense/en/latest/packages/snort/setup.html)
+   Neste projeto o Snort está configurado na Interface de Internet(WAN). **Clique no play para ativar.** 
     
-    Neste projeto o Snort está configurado na Interface de Internet(WAN). **Clique no play para ativar.** 
+   <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/439a3b1bb6390363cd98a118d0d517994f7452ba/imagens/configurando_snort/snort04.png" width="70%"/>
     
-    ![snort04](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/439a3b1bb6390363cd98a118d0d517994f7452ba/imagens/configurando_snort/snort04.png)
+   É possível habilitar todas as regras no Snort através fo submenu **INTER Categorias,** escolhendo a que melhor atende a proteção da sua rede/aplicação. 
     
-    É possível habilitar todas as regras no Snort através fo submenu **INTER Categorias,** escolhendo a que melhor atende a proteção da sua rede/aplicação. 
+   Também é possível criar uma regra customizada no submenu **INTER Rules.** 
     
-    Também é possível criar uma regra customizada no submenu **INTER Rules.** 
+   Neste projeto foi criado uma regra de Alerta para tentativa de ping na aplicação Web: 
+   
+   <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/439a3b1bb6390363cd98a118d0d517994f7452ba/imagens/configurando_snort/snort05.png" width="70%"/>
     
-    Neste projeto foi criado uma regra de Alerta para tentativa de ping na aplicação Web: 
+   **Para fazer o teste, acesse o terminal da máquina host e faça um ping para o IP Virtual do WAF. E veja os alertas no menu conforme imagem abaixo:**
     
-    ![snort05](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/439a3b1bb6390363cd98a118d0d517994f7452ba/imagens/configurando_snort/snort05.png)
+   <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/439a3b1bb6390363cd98a118d0d517994f7452ba/imagens/configurando_snort/snort06.png" width="70%"/>
     
-    **Para fazer o teste, acesse o terminal da máquina host e faça um ping para o IP Virtual do WAF. E veja os alertas no menu conforme imagem abaixo:**
-    
-    ![snort06](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/439a3b1bb6390363cd98a118d0d517994f7452ba/imagens/configurando_snort/snort06.png)
-    
-    No Graylog já é possível analisar o alerta configurado. 
+   No Graylog já é possível analisar o alerta configurado. 
