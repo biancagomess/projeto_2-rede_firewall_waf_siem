@@ -132,7 +132,9 @@ Cada interface deverá ter suas regras, configure uma por uma:
 ----
 
 <h2>Outras configurações no pfSense:</h2>
- No menu **System ➡️ [General Setup](http://192.168.56.2/system.php)** é possível criar um domínio, configurar o servidor DNS, hostname, e até escolher um  tema, mas no projeto vamos manter o padrão.
+ No menu:
+ 
+ **System ➡️ [General Setup](http://192.168.56.2/system.php)** é possível criar um domínio, configurar o servidor DNS, hostname, e até escolher um  tema, mas no projeto vamos manter o padrão.
 
   ![demais_configurações](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/demais_configura%C3%A7%C3%B5es_pfSense.png)
 
