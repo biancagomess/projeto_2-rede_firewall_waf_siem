@@ -23,12 +23,13 @@ Aceite os termos.
  ---
 4. Altere a senha padrão: 
     
-    System ➡️ [User Manager](http://192.168.56.10/system_usermanager.php) ➡️  [Users](http://192.168.56.10/system_usermanager.php) ➡️ [Edit](http://192.168.56.10/system_usermanager.php?act=edit&userid=0) (ícone de lápis ✏️ para editar)
+    System ➡️ [User Manager](http://192.168.56.2/system_usermanager.php) ➡️  [Users](http://192.168.56.2/system_usermanager.php) ➡️ [Edit](http://192.168.56.10/system_usermanager.php?act=edit&userid=0) (ícone de lápis ✏️ para editar)
    
 ---    
 
 5. Habilite ssh
-   Acesso seguinte caminho no menu para configurar acesso via ssh ao firewall: 
+
+  Acesse seguinte caminho no menu para configurar o acesso via ssh ao firewall: 
 
    System ➡️ [Advanced](http://192.168.56.2/system_advanced_admin.php) ➡️ [Admin Access](http://192.168.56.2/system_advanced_admin.php)
 
@@ -46,7 +47,8 @@ Na página inicial verifique as informações do sistema e as interfaces ativas 
 ![verificando_interfaces](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/visualizar_interfaces_pfSense.png)
 
 1. Configure a DMZEXT onde o WAF será configurado: 
-    a. Acesse o menu **Interfaces ➡️ [Interface Assignments](http://192.168.56.10/interfaces_assign.php)**
+
+   a. Acesse o menu **Interfaces ➡️ [Interface Assignments](http://192.168.56.2/interfaces_assign.php)**
     
     ![adicionando_dmzext](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/add_interface_dmzext.png)
     
