@@ -23,7 +23,17 @@
    **Verifique o resultado do ping com sucesso:**
     
    ![iface_dmz02](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/cf7d2f2de592fe6a7a64e39340326865bb8d0a20/imagens/configurando_interfaces/iface_dmz02.png)
+
+
+<h2>Regra para DNS</h2>
+      Na interface **DMZ**, **adicione** mais uma **regra para consulta DNS**: 
     
+   <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7705a063117b6af8bb3d4eb1106ab815174abbe2/imagens/configurando_dns/configure_regra_dns.png" width="70%"/>
+    
+   **Salve e aplique as alterações.**
+ 
+    --- 
+   
 <h2>Regra para autorizar host da DMZ realizarem atualização</h2>
 Configurar uma regra no firewall para que as máquinas tenha acesso à internet e possam ser atualizadas:
 
