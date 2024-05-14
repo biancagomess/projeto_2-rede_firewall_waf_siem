@@ -1,6 +1,6 @@
 <h1>Interface DMZEXT</h1>
     
-   Configurando o WAF
+   **Configurando o WAF**
     
    Crie uma nova máquina virtual com a .iso Debian, nesse projeto está com o nome **WAF_machine**, e siga as orientações dessas documentações para instalar o Nginx ModSecurity: 
     
