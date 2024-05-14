@@ -29,9 +29,9 @@ Aceite os termos.
 
 5. Habilite ssh
 
-  Acesse seguinte caminho no menu para configurar o acesso via ssh ao firewall: 
+    Acesse seguinte caminho no menu para configurar o acesso via ssh ao firewall: 
 
-   System ➡️ [Advanced](http://192.168.56.2/system_advanced_admin.php) ➡️ [Admin Access](http://192.168.56.2/system_advanced_admin.php)
+    System ➡️ [Advanced](http://192.168.56.2/system_advanced_admin.php) ➡️ [Admin Access](http://192.168.56.2/system_advanced_admin.php)
 
 ![enable_ssh](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/enable_ssh_pfSense.png)
 
