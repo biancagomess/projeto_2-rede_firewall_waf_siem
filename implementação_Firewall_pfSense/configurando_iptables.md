@@ -1,17 +1,12 @@
-<h3>Segurança em camadas</h3>
+<h3>Segurança em camadas - Graylog</h3>
 
 Para melhorar a segurança da rede, neste projeto foi implemento a segurnaça em camadas, configurado um firewall de kernel Linux o Netfilter(iptables), um firewall de linha de comando, que pode ser melhor entendido pela documentação original: 
     
    [netfilter/iptables project homepage-The netfilter.org "iptables" project](https://netfilter.org/projects/iptables/index.html)
     
-   Antes da instalação do iptables, é necessário configurar uma regra no firewall para que as máquinas tenha acesso à internet e possam ser atualizadas: 
+   Antes da instalação do iptables, é necessário configurar uma regra no firewall para que as máquinas tenha acesso à internet e possam ser atualizadas, verifique as regras na interface DMZ. 
     
-   **Na interface DMZ foi criado a regra de acesso para o IP do Graylog:**
-    
-   <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/ec4deda75759f7a8578927ee99235baf4017add2/imagens/configurando_iptables/iptables01.png" width="70%"/>
-    
-   Clique em **Save e aplique as alterações.** 
-   
+  
    ---
    
    **Instalando o iptables:** 
