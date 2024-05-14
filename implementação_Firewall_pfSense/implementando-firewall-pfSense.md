@@ -2,7 +2,7 @@
 1. Na máquina virtual do pfSense (Firewall), configure o IP das interfaces, por padrão o pfSense vem com um IP  (você pode alterar), conforme a sua rede na opção 2 do terminal do pfSense. 
  
 
-![interfaces_máquina_pfSense](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/interfaces_pfSense_config.png)
+<img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/interfaces_pfSense_config.png" width="70%"/>
 
 2. Verifique as interfaces configuradas no pfSense:
 
@@ -12,12 +12,17 @@
     
     **http://192.168.56.2**
     
-    ![login_pfSense](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/login_pfSense.png)
+    <div align="center">
+     <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/login_pfSense.png" width="80%"/>
+    </div>
     
     Informe o usuário e a senha, que vem por padrão usuário: “**admin**”, senha:“**pfsense**”.
-    
-    ![termos_pfSense](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/termos_pfSense.png)
-    
+
+   <div align="center">
+     <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/termos_pfSense.png" width="80%"/>
+    </div>
+
+        
 Aceite os termos. 
 
  ---
@@ -33,7 +38,7 @@ Aceite os termos.
 
     System ➡️ [Advanced](http://192.168.56.2/system_advanced_admin.php) ➡️ [Admin Access](http://192.168.56.2/system_advanced_admin.php)
 
-![enable_ssh](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/enable_ssh_pfSense.png)
+<img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/enable_ssh_pfSense.png" width="70%"/>
 
 Clique em **Save**
 
