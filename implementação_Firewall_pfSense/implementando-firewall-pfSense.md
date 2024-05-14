@@ -28,7 +28,7 @@ Aceite os termos.
  ---
 4. Altere a senha padrão: 
     
-    System ➡️ [User Manager](http://192.168.56.2/system_usermanager.php) ➡️  [Users](http://192.168.56.2/system_usermanager.php) ➡️ [Edit](http://192.168.56.10/system_usermanager.php?act=edit&userid=0) (ícone de lápis ✏️ para editar)
+    System ➡️ [User Manager](http://192.168.56.2/system_usermanager.php) ➡️  [Users](http://192.168.56.2/system_usermanager.php) ➡️ [Edit](http://192.168.56.2/system_usermanager.php?act=edit&userid=0) (ícone de lápis ✏️ para editar)
    
 ---    
 
@@ -107,9 +107,9 @@ Na página inicial verifique as informações do sistema e as interfaces ativas 
 
 Cada interface deverá ter suas regras, configure uma por uma: 
   1. [Configure a interface Internet](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/800c1a16a2f64ad10fb5efa5aa40dbcacaa6ec94/implementa%C3%A7%C3%A3o_Firewall_pfSense/configurando_interfaces/interface_internet.md); 
-  2. Configure a interface Intranet; 
-  3. Configure a interface DMZ; 
-  4. Configure a interface DMZEXT;
+  2. [Configure a interface Intranet](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/57f19c049846de71b168102c02c6e7ebb62c44f2/implementa%C3%A7%C3%A3o_Firewall_pfSense/configurando_interfaces/interface_intranet.md); 
+  3. [Configure a interface DMZ](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/57f19c049846de71b168102c02c6e7ebb62c44f2/implementa%C3%A7%C3%A3o_Firewall_pfSense/configurando_interfaces/interface_dmz.md); 
+  4. [Configure a interface DMZEXT](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/57f19c049846de71b168102c02c6e7ebb62c44f2/implementa%C3%A7%C3%A3o_Firewall_pfSense/configurando_interfaces/interface_dmzext.md);
 
 
 ----
@@ -121,18 +121,18 @@ Cada interface deverá ter suas regras, configure uma por uma:
     
    No Firewall é possível verificar os logs do tráfego de rede e aplicar filtros para uma melhor análise, no seguinte caminho no menu:
     
-   **Status ➡️ [System Logs](http://192.168.56.10/status_logs.php) ➡️ [Firewall](http://192.168.56.10/status_logs_filter.php) ➡️ [Dynamic View](http://192.168.56.10/status_logs_filter_dynamic.php?logfile=filter&view=dynamic)**
+   **Status ➡️ [System Logs](http://192.168.56.2/status_logs.php) ➡️ [Firewall](http://192.168.56.2/status_logs_filter.php) ➡️ [Dynamic View](http://192.168.56.2/status_logs_filter_dynamic.php?logfile=filter&view=dynamic)**
     
    Para mais detalhes do tráfego da rede, pode ser configurado a captura de pacotes através do acesso em: 
    
-   **Diagnostics ➡️ [Packet Capture](http://192.168.56.10/diag_packet_capture.php)**
+   **Diagnostics ➡️ [Packet Capture](http://192.168.56.2/diag_packet_capture.php)**
    
    Insira as configurações que deseja monitorar e clique em **Start,** logo a captura de pacotes será iniciada. Depois para encerrar clica em **Stop.** 
 
 ----
 
 <h2>Outras configurações no pfSense:</h2>
- No menu **System ➡️ [General Setup](http://192.168.56.10/system.php)** é possível criar um domínio, configurar o servidor DNS, hostname, e até escolher um  tema, mas no projeto vamos manter o padrão.
+ No menu **System ➡️ [General Setup](http://192.168.56.2/system.php)** é possível criar um domínio, configurar o servidor DNS, hostname, e até escolher um  tema, mas no projeto vamos manter o padrão.
 
   ![demais_configurações](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/demais_configura%C3%A7%C3%B5es_pfSense.png)
 
