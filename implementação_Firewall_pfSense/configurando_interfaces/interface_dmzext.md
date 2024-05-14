@@ -123,6 +123,57 @@ ss -nlt
 nc -nvz 172.16.10.10 80
 ```
 
+----
+
+<h2>Configurando SSL no WAF</h2>
+No terminal, digite o seguinte comando: 
+
+```
+apt install openssl
+cd /etc/nginx
+mkdir ssl
+cd ssl
+openssl req -newkey rsa:4096 \
+            -x509 \
+            -sha256 \
+            -days 3650 \
+            -nodes \
+            -out example.crt \
+            -keyout example.key
+```
+<div align="center"> 
+    <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/assets/81443381/9fc486b0-9369-4228-a0a7-99288761bed3" width="70%"/>
+</div>
+
+Preencha com os dados do seu certificado! 
+Habilite a porta 443 HTTPS no WAF, digitando os seguintes comandos no terminal: 
+
+    ```
+    ss -nlt #verifica se a porta 443já está aberta
+    
+    ##Acesse o caminho: 
+    cd /ect;/nginx/sites-enables
+    ```
+Edite o arquivo de configuiração, incluindo a porta 443, e o caminho do certificado e a chave: 
+    ssl_certificate /etc/nginx/certssl/example.crt;
+    ssl_certificate_key /etc/nginx/certssl/example.key;
+<div align="center"> 
+<img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/assets/81443381/73387efe-5af6-41b3-9eff-3053012228c9" width="70%"/>
+</div>
+Recarregue o nginx para aplicar as configurações: 
+
+```
+nginx -s reload
+ss -nlt
+```
+
+E acesse a aplicação usando HTTPS. 
+Verifique o certificado SSL assinado: 
+
+<div align="center"> 
+<img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/assets/81443381/db3d4ff0-6c3a-44b7-bd02-f58722b81235" width="70%"/>
+</div>
+---
 <h2>Configurando o DNS no host</h2>
 Na máquina host(sua pŕopria máquina), no terminal digite o comando: 
 
@@ -130,9 +181,11 @@ Na máquina host(sua pŕopria máquina), no terminal digite o comando:
 sudo nano /etc/hosts
 ```
 Insira as seguintes configurações: IP NAT do servidor Web e o endereço da aplicação Web:
-
-![image](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/assets/81443381/a86bde39-0368-4715-8e98-4d947575422f)
-
+<div align="center"> 
+<img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/assets/81443381/a86bde39-0368-4715-8e98-4d947575422f" width="70%"/>
+</div>
 Assim as requsições que chegam no WAF serão enviadas para o server web. 
+
+
 
 
