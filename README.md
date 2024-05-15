@@ -9,7 +9,14 @@ Este projeto propõe a concepção e execução de segurança de rede, incorpora
 <div align="center">
   
 ![interfaces_configuradas](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/7dcaeb101b06428af1c3831245cbf3c6458aa5eb/imagens/configurando_ambiente_img/todas_interfaces_pfSense.png)
+</div>
 
+
+<div align="center">
+  <div style="display: flex; flex-direction: row;">
+    <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/assets/81443381/e899a3a7-b862-4fa2-be20-fbaff7dea9de" width="50%"/>
+    <img src="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/assets/81443381/6631f662-0324-409a-84b9-0dc88a19e348" width="50%"/>
+  </div>
 </div>
 
 
@@ -29,7 +36,7 @@ Este projeto propõe a concepção e execução de segurança de rede, incorpora
    <br>
   <li><a href="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/75360aae7449fb087329c2d068dd1e79870e7e4d/testando_a_aplica%C3%A7%C3%A3o/testando_a_aplicacao.md"> Testando a segurança da aplicação.</a></li>
      <br>
-  <li> Facilitando a leitura de logs e dashboard no Graylog - SIEM</li>
+  <li><a href="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/fd5fc023292ff01cc39238d0a13c1e684559d4ba/Implementando_SIEM/visualizando_logs_dashboard/visualizando_logs_dashboard.md"> Facilitando a leitura de logs com dashboard no Graylog </a></li>
   
 </ul>
 
