@@ -6,7 +6,7 @@ No menu  **Firewall ➡️ [NAT](http://192.168.56.10/firewall_nat.php) ➡️ [
 
 Clique em **+Add ⤴️ para adicionar o IP que será traduzido.** 
 
-![ip_virtual_nat_waf01](https://github.com/biancagomess/projeto_2_rede_firewall_WAF_SIEM/blob/main/imagens/configurando_ip_virtual_nat/ip_virtual_nat_waf01.png)
+<img src="https://github.com/biancagomess/projeto_2_rede_firewall_WAF_SIEM/blob/main/imagens/configurando_ip_virtual_nat/ip_virtual_nat_waf01.png"/>
 
 Na imagem acima foi configurado o IP do WAF **172.16.20.12** na mesma rede da internet **nesse caso o IP da sua rede local (do seu roteador),** através do **NAT (Network Address Translation).** 
 
