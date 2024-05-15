@@ -1,5 +1,5 @@
 <h1 align="center">2° Projeto Prático - Segurança da Informação</h1>
-<h5 align="center">Programa Desenvolve - Grupo Boticário</h5>
+<h5 align="center">Programa Desenvolve - Grupo Boticário (parceria Alura)</h5>
 
 <div>
   <p> No cenário da segurança cibernética, projetar e implementar uma solução abrangente de segurança de rede se tornou crucial. 
