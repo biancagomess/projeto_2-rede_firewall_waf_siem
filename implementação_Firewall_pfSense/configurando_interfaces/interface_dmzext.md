@@ -64,7 +64,7 @@
    
    Na prática o sevidor não está hospedado, porém é possível simular o acesso para ver o envio dos logs do WAF para o Graylog, pois ele está na linha de frente da rede, recebendo todas as requisições de origem da internet/clientes. Mas a rede ainda não reconhece o IP do WAF sendo assim deve ser criado um IP virtual e realizar o NAT. 
    
-   [Criando IP virtual e realizando NAT - WAF](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/6ff45058c856426665abdb5ce87e752bebc53f51/implementa%C3%A7%C3%A3o_Firewall_pfSense/Criando%20IP%20virtual%20e%20realizando%20NAT%20-%20WAF.md)
+   [Criando IP virtual e realizando NAT - WAF](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/f8ff9be725c4e927dc68178ae3524affd4ff4dd4/implementa%C3%A7%C3%A3o_Firewall_pfSense/Criando%20IP%20virtual%20e%20realizando%20NAT%20-%20WAF.md)
     
 **Verificando os logs no Graylog enviados pelo WAF:**
  <div align="center">   
