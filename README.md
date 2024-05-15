@@ -32,7 +32,7 @@ Este projeto propõe a concepção e execução de segurança de rede, incorpora
    <br>
   <li> <a href="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/0e72c4a82bbbf98ad34303ba1fba1a0ce6fa5dad/implementa%C3%A7%C3%A3o_Firewall_pfSense/configurando_interfaces/interface_dmzext.md">Configuração de WAF: Configure um WAF para proteger aplicativos web.</a></li>
    <br>
-  <li><a href="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/94bec9e70d309f037b7ee0cf8b42951fefe9e859/Implementando_SIEM/implemantando_SIEM.md"> Implementação de SIEM: Implemente um SIEM para monitorar eventos de segurança.</a></li>
+  <li><a href="https://github.com/biancagomess/projeto_2_rede_firewall_WAF_SIEM/blob/4a985a5aabcdf6a085e90ca0cb4c947a76ac2814/implementa%C3%A7%C3%A3o_Firewall_pfSense/configurando_interfaces/interface_dmzext.md"> Implementação de SIEM: Implemente um SIEM para monitorar eventos de segurança.</a></li>
    <br>
   <li><a href="https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/c20634ee73c2e8b789298ffab7c73c522297e8dc/testando_a_aplica%C3%A7%C3%A3o/testando_a_aplicacao.md"> Testando a segurança da aplicação.</a></li>
      <br>
