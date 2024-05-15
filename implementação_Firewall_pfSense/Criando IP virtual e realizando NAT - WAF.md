@@ -28,6 +28,7 @@ Em seguida é necessário criar um IP virtual para o IP que foi traduzido pelo N
 
 ![ip_virtual_nat_waf02](https://github.com/biancagomesalves/projeto_2_rede_firewall_WAF_SIEM/blob/8ceadf0a53055e218ac847840b160ae64ed1d75f/imagens/configurando_ip_virtual_nat/ip_virtual_nat_waf02.png)
 
+
 Após tudo configurado, clique em **Save** e depois em **Apply Changes.** 
 
 Pronto! Retorne na sessão de configuração da DMZEXT.
