@@ -54,6 +54,10 @@ Este projeto propõe a concepção e execução de segurança de rede, incorpora
   
 ---
 
+Desenvolvido ❤️ por Bianca Gomes Alves 
+- 🔗 [LinkedIn](https://www.linkedin.com/in/bianca-gomes-alves)
+
+
 
 
 
